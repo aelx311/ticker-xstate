@@ -25,7 +25,7 @@ function App() {
             label="Ticker"
             variant="outlined"
             onChange={(event) =>
-              send('TICKER_INPUT', { ticker: event.target.value as string })
+              send('TICKER_INPUT', { ticker: event.target.value })
             }
           />
         </Grid>
@@ -37,7 +37,7 @@ function App() {
             variant="outlined"
             onChange={(event) =>
               send('EXCHANGE_SELECT', {
-                exchange: event.target.value as string
+                exchange: event.target.value
               })
             }
           >
